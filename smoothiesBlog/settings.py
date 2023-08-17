@@ -29,8 +29,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'smoothies-blog-django-a9b0697d513b.herokuapp.com', 'localhost']
+# ALLOWED_HOSTS = ['smoothies-blog-django-a9b0697d513b.herokuapp.com', 'localhost']
+
+ALLOWED_HOSTS = ['8000-soukasamadi-django-smoot-ad2nmgt5dw.us2.codeanyapp.com',
+                 'smoothies-blog-django-a9b0697d513b.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -132,7 +134,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
